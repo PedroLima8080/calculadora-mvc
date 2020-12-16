@@ -1,0 +1,153 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial;
+}
+
+*{
+    box-sizing: border-box;
+    outline: 0;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face{
+    font-family: Calculator;
+    src:url('./fonts/calculator.ttf')
+}
+
+.calc{
+    width: 350px;
+    background-color: grey;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.screen{
+    background-color: rgb(171, 190, 139);
+    padding: 10px;
+    border: solid 5px rgb(218, 216, 216);
+    border-radius: 6px;
+}
+
+.hora-data{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-family: Calculator;
+}
+
+.history{
+    margin-top: 5px;
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-family: Calculator;
+    text-align: end;
+}
+
+.display{
+    margin-top: 5px;
+    text-align: end;
+    font-size: 60px;
+    letter-spacing: 1px;
+    font-family: Calculator;
+}
+
+
+.buttons{
+    margin-top: 20px;
+    display: grid;
+}
+
+.buttons button{
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.buttons button.btn-ac {
+    grid-area: btn-ac;
+    background-color: orange;
+}
+.buttons button.btn-ce {
+    grid-area: btn-ce;
+    background-color: orange;
+}
+.buttons button.btn-porcento {
+    grid-area: btn-porcento;
+}
+.buttons button.btn-divisao {
+    grid-area: btn-divisao;
+}
+.buttons button.btn-7 {
+    grid-area: btn-7;
+}
+.buttons button.btn-8 {
+    grid-area: btn-8;
+}
+.buttons button.btn-9 {
+    grid-area: btn-9;
+}
+.buttons button.btn-multiplicacao {
+    grid-area: btn-m;
+}
+.buttons button.btn-4 {
+    grid-area: btn-4;
+}
+.buttons button.btn-5 {
+    grid-area: btn-5;
+}
+.buttons button.btn-6 {
+    grid-area: btn-6;
+}
+.buttons button.btn-subtracao {
+    grid-area: btn-s;
+}
+.buttons button.btn-1 {
+    grid-area: btn-1;
+}
+.buttons button.btn-2 {
+    grid-area: btn-2;
+}
+.buttons button.btn-3 {
+    grid-area: btn-3;
+}
+.buttons button.btn-somaa {
+    grid-area: btn-somaa;
+}
+.buttons button.btn-0 {
+    grid-area: btn-0;
+}
+.buttons button.btn-ponto {
+    grid-area: btn-p;
+}
+.buttons button.btn-igual {
+    grid-area: btn-i;
+}
+.buttons button.btn-soma {
+    grid-area: btn-soma;
+}
+
+.buttons button:hover{
+    background-color: rgba(255, 255, 255, 0.281);
+}
+
+.buttons{
+    grid-template: 
+    "btn-ac btn-ce btn-porcento btn-divisao" 50px
+    "btn-7 btn-8 btn-9 btn-m" 50px
+    "btn-4 btn-5 btn-6 btn-s" 50px
+    "btn-1 btn-2 btn-3 btn-soma" 50px
+    "btn-0 btn-p btn-i btn-soma" 50px
+    ;
+    grid-gap: 10px;
+}
