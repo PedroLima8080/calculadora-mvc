@@ -64,90 +64,28 @@ html, body{
 .buttons{
     margin-top: 20px;
     display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
 }
 
 .buttons button{
     font-size: 18px;
     font-weight: bold;
     border-radius: 4px;
+    height: 40px;
     border: none;
     cursor: pointer;
 }
 
-.buttons button.btn-ac {
-    grid-area: btn-ac;
+.buttons button.btn-ac, .buttons button.btn-ce{
     background-color: orange;
 }
-.buttons button.btn-ce {
-    grid-area: btn-ce;
-    background-color: orange;
-}
-.buttons button.btn-porcento {
-    grid-area: btn-porcento;
-}
-.buttons button.btn-divisao {
-    grid-area: btn-divisao;
-}
-.buttons button.btn-7 {
-    grid-area: btn-7;
-}
-.buttons button.btn-8 {
-    grid-area: btn-8;
-}
-.buttons button.btn-9 {
-    grid-area: btn-9;
-}
-.buttons button.btn-multiplicacao {
-    grid-area: btn-m;
-}
-.buttons button.btn-4 {
-    grid-area: btn-4;
-}
-.buttons button.btn-5 {
-    grid-area: btn-5;
-}
-.buttons button.btn-6 {
-    grid-area: btn-6;
-}
-.buttons button.btn-subtracao {
-    grid-area: btn-s;
-}
-.buttons button.btn-1 {
-    grid-area: btn-1;
-}
-.buttons button.btn-2 {
-    grid-area: btn-2;
-}
-.buttons button.btn-3 {
-    grid-area: btn-3;
-}
-.buttons button.btn-somaa {
-    grid-area: btn-somaa;
-}
-.buttons button.btn-0 {
-    grid-area: btn-0;
-}
-.buttons button.btn-ponto {
-    grid-area: btn-p;
-}
-.buttons button.btn-igual {
-    grid-area: btn-i;
-}
+
 .buttons button.btn-soma {
-    grid-area: btn-soma;
+    grid-row: span 2;
+    height: 100%;
 }
 
 .buttons button:hover{
     background-color: rgba(255, 255, 255, 0.281);
-}
-
-.buttons{
-    grid-template: 
-    "btn-ac btn-ce btn-porcento btn-divisao" 50px
-    "btn-7 btn-8 btn-9 btn-m" 50px
-    "btn-4 btn-5 btn-6 btn-s" 50px
-    "btn-1 btn-2 btn-3 btn-soma" 50px
-    "btn-0 btn-p btn-i btn-soma" 50px
-    ;
-    grid-gap: 10px;
 }
