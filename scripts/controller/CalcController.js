@@ -65,6 +65,11 @@ class CalcController {
     }
 
     getResult(){
+        
+        this._operation[0] = parseFloat(this._operation[0]);
+        if(this._operation[2])
+            this._operation[2] = parseFloat(this._operation[2]);
+        
         return eval(this._operation.join(""))
     }
 
